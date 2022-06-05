@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "ecommerce"
+    "name": "pixe"
   },
   "api": {
-    "projectId": "vfxfwnaw",
+    "projectId": "tauvanub",
     "dataset": "production"
   },
   "plugins": [

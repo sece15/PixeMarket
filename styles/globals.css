@@ -64,11 +64,24 @@ width: 100%;
     -webkit-text-stroke: 1px #f02d34;
     margin-left: 6px;
 }
-.logo{
-  color: gray;
-  font-size: 18px;
 
+.logo img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
 }
+
+.logo{
+  cursor: pointer;
+  position: relative;
+  transition: transform .4s ease;
+  border: none;
+  background-color: transparent;
+}
+.logo:hover{
+  transform: scale(1.1,1.1);
+}
+
 .cart-icon{
   font-size: 25px;
   color: gray;
@@ -238,7 +251,7 @@ text-align: end;
 }
 .banner-desc .left h3{
   font-weight: 900;
-  font-size: 80px;
+  font-size: 70px;
   margin-left: 25px;
 }
 .banner-desc .left p{
@@ -249,20 +262,23 @@ text-align: end;
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 25%;
+  left: 27%;
 }
 .banner-desc .right{
   line-height: 1.4;
 }
 .banner-desc .right h3{
+  float: right;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 50px;
 }
 .banner-desc .right p{
-  font-size: 18px;
+  float: right;
+  width: 60%;
+  font-size: 20px;
 }
 .banner-desc .right .company-desc{
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
 }
 .cart-wrapper{
