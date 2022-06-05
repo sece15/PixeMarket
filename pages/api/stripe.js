@@ -18,16 +18,16 @@ export default async function handler(req, res) {
           const newImage = img.replace('image-', 'https://cdn.sanity.io/images/vfxfwnaw/production/').replace('-webp', '.webp');
 
           return {
-            price_data: { 
+            price_data: {
               currency: 'usd',
-              product_data: { 
+              product_data: {
                 name: item.name,
                 images: [newImage],
               },
               unit_amount: item.price * 100,
             },
             adjustable_quantity: {
-              enabled:true,
+              enabled: true,
               minimum: 1,
             },
             quantity: item.quantity
@@ -46,6 +46,6 @@ export default async function handler(req, res) {
     }
   } else {
     res.setHeader('Allow', 'POST');
-    res.status(405).end('Method Not Allowed');
+    res.status(405).end('Método no permitido');
   }
 }

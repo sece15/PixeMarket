@@ -4,7 +4,7 @@ import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 Pixe All rights reserverd</p>
+      <p>2022 Tecse All rights reserverd</p>
       <p className="icons">
         <a href="https://www.instagram.com/hcopixel/" target="_blank" rel="noopener noreferrer">
           <AiFillInstagram />
